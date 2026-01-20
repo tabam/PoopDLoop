@@ -3,13 +3,18 @@
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 import { ShoppingCart, User, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useCartStore } from "@/store/cart";
 
 export function Header() {
   const { data: session } = useSession();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const totalItems = useCartStore((state) => state.getTotalItems());
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
@@ -52,7 +57,7 @@ export function Header() {
               className="relative p-2 text-gray-700 hover:text-purple-600 transition-colors"
             >
               <ShoppingCart className="w-6 h-6" />
-              {totalItems > 0 && (
+              {mounted && totalItems > 0 && (
                 <span className="absolute -top-1 -right-1 w-5 h-5 bg-purple-600 text-white text-xs font-bold rounded-full flex items-center justify-center">
                   {totalItems > 99 ? "99+" : totalItems}
                 </span>
