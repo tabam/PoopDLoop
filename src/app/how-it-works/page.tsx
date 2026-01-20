@@ -114,6 +114,60 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
+      {/* See It In Action - Photo Gallery */}
+      <section className="mb-20">
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">
+          See It In Action
+        </h2>
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Real product photos showing how POOP D LOOP works. The apple represents waste for demonstration purposes.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+            <div className="aspect-square relative">
+              <Image
+                src="/images/demo/hoop-ready.jpg"
+                alt="POOP D LOOP with bag attached - ready to use"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-semibold text-gray-900">Step 1: Ready to Use</h3>
+              <p className="text-sm text-gray-600">Bag attached to hoop with elastic band secured in groove. Extra elastic bands shown.</p>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+            <div className="aspect-square relative">
+              <Image
+                src="/images/demo/collection-demo-1.jpg"
+                alt="POOP D LOOP collecting waste - apple represents poop"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-semibold text-gray-900">Step 2: Collection</h3>
+              <p className="text-sm text-gray-600">Waste (apple shown) falls onto the bag. Position hoop under pet during defecation.</p>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+            <div className="aspect-square relative">
+              <Image
+                src="/images/demo/collection-demo-3.jpg"
+                alt="POOP D LOOP with collected waste ready for disposal"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-semibold text-gray-900">Step 3: Pick Up & Seal</h3>
+              <p className="text-sm text-gray-600">Lift hoop - waste drops into bag. Remove elastic band to seal bag for disposal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Step by Step Section */}
       <section className="mb-20">
         <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">

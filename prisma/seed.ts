@@ -12,7 +12,7 @@ const poopDLoopProducts = [
     description:
       "The original hands-free animal waste collection hoop. Precision-engineered with an 8.0\" outer diameter and 5.0\" inner opening. Features an innovative elastic band groove (0.125\" wide × 0.250\" deep) and four semi-circular notches at 90° intervals for easy bag installation and removal. The fluorescent orange color provides maximum visibility up to 100 feet - perfect for marking waste locations and returning later! Embossed 'POOP D LOOP D POOP' branding around the rim. Symmetrical 0.25\" thick design works from either side. Injection-molded with UV-resistant pigments.",
     price: 1999,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 100,
   },
@@ -21,7 +21,7 @@ const poopDLoopProducts = [
     description:
       "The hands-free animal waste collection hoop in high-visibility fluorescent yellow. Precision specs: 8.0\" outer diameter, 5.0\" inner opening, 0.25\" thickness. Features the patented elastic band groove system (0.125\" × 0.250\") and four semi-circular notches for easy bag handling. Perfect for marking waste locations in varied terrain - visible from 50-100 feet. Embossed branding and symmetrical design.",
     price: 1999,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 75,
   },
@@ -30,7 +30,7 @@ const poopDLoopProducts = [
     description:
       "Stand out with the bright pink POOP D LOOP! Same precision engineering: 8.0\" outer diameter, 5.0\" inner opening, elastic band groove, and four semi-circular notches. The bright pink color is uncommon in nature, making it easy to spot from across the park. Perfect for dog moms who want style and function. UV-resistant and built to last.",
     price: 1999,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 60,
   },
@@ -39,7 +39,7 @@ const poopDLoopProducts = [
     description:
       "The POOP D LOOP in vibrant bright blue. Engineered to spec: 8.0\" OD × 5.0\" ID × 0.25\" thick. Features circumferential groove (0.125\" × 0.250\") for secure elastic band retention and four notches for easy bag handling. High visibility on grass and dirt surfaces. Durable injection-molded construction with UV-resistant pigments.",
     price: 1999,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 50,
   },
@@ -48,7 +48,7 @@ const poopDLoopProducts = [
     description:
       "Classic bright red POOP D LOOP for traditional high-visibility waste collection. Full specifications: 8.0\" outer diameter, 5.0\" inner opening, 0.25\" thickness, elastic groove 0.125\" × 0.250\", four semi-circular notches. Strong contrast with green grass and natural environments. Same innovative hands-free design.",
     price: 1999,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 45,
   },
@@ -148,7 +148,7 @@ const poopDLoopProducts = [
     description:
       "Everything you need to get started! Includes 2 POOP D LOOP hoops (your choice of colors), 25 standard bags, and a quick-start instruction guide. Each hoop: 8.0\" OD × 5.0\" ID × 0.25\" thick with elastic groove and notches. Perfect for new pet owners or those wanting to try the hands-free collection revolution.",
     price: 3499,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Bundles",
     inventory: 50,
   },
@@ -157,7 +157,7 @@ const poopDLoopProducts = [
     description:
       "Our most popular bundle! Includes 3 POOP D LOOP hoops in mixed colors, 50 standard bags, and 1 SCOOP D POOP backup scooper. Complete collection solution for everyday dog owners. Save 15% compared to buying separately.",
     price: 5499,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Bundles",
     inventory: 40,
   },
@@ -166,7 +166,7 @@ const poopDLoopProducts = [
     description:
       "The premium choice for serious pet owners! Includes 4 POOP D LOOP hoops in assorted colors, 100 standard bags, 1 SCOOP D POOP, and 1 HOOP D LOOP wall rack. Stay organized and always ready. Save 20% compared to individual items.",
     price: 8999,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Bundles",
     inventory: 25,
   },
@@ -175,7 +175,7 @@ const poopDLoopProducts = [
     description:
       "The complete waste management ecosystem! Includes 6 POOP D LOOP hoops (all 5 colors + extra orange), 200 standard bags, 1 SCOOP D POOP, 1 HOOP D LOOP deluxe rack, and 1 COUP D POOP medium container. Everything you need for a multi-dog household or professional use. Save 25%!",
     price: 14999,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Bundles",
     inventory: 15,
   },
@@ -186,7 +186,7 @@ const poopDLoopProducts = [
     description:
       "Track multiple waste locations with color-coded hoops! Set includes Orange, Yellow, and Pink POOP D LOOP hoops. Each hoop: 8.0\" OD × 5.0\" ID with elastic groove and 4 notches. Perfect for multi-dog walks - assign each dog a color or mark multiple locations. Visible from 50-100 feet. Save 10% vs individual hoops.",
     price: 5399,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 35,
   },
@@ -195,7 +195,7 @@ const poopDLoopProducts = [
     description:
       "Get every color in the POOP D LOOP rainbow! Includes all 5 vibrant colors: Fluorescent Orange, Fluorescent Yellow, Bright Pink, Bright Blue, and Bright Red. Each precision-engineered to spec: 8.0\" × 5.0\" × 0.25\" with groove and notches. Maximum visibility options and color-coding possibilities. Save 15%.",
     price: 8499,
-    images: ["/images/products/poop-d-loop-diagram.png"],
+    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 25,
   },
