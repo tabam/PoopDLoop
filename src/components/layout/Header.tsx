@@ -31,16 +31,16 @@ export function Header() {
               Products
             </Link>
             <Link
-              href="/products?category=new"
+              href="/how-it-works"
               className="text-gray-700 hover:text-purple-600 transition-colors font-medium"
             >
-              New Arrivals
+              How It Works
             </Link>
             <Link
-              href="/products?category=sale"
+              href="/products?category=Bundles"
               className="text-gray-700 hover:text-purple-600 transition-colors font-medium"
             >
-              Sale
+              Bundles
             </Link>
           </nav>
 
@@ -110,18 +110,18 @@ export function Header() {
                 Products
               </Link>
               <Link
-                href="/products?category=new"
+                href="/how-it-works"
                 className="text-gray-700 hover:text-purple-600 transition-colors font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                New Arrivals
+                How It Works
               </Link>
               <Link
-                href="/products?category=sale"
+                href="/products?category=Bundles"
                 className="text-gray-700 hover:text-purple-600 transition-colors font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Sale
+                Bundles
               </Link>
               <hr className="border-gray-200" />
               {session ? (
