@@ -12,7 +12,7 @@ const poopDLoopProducts = [
     description:
       "The original hands-free animal waste collection hoop. Precision-engineered with an 8.0\" outer diameter and 5.0\" inner opening. Features an innovative elastic band groove (0.125\" wide × 0.250\" deep) and four semi-circular notches at 90° intervals for easy bag installation and removal. The fluorescent orange color provides maximum visibility up to 100 feet - perfect for marking waste locations and returning later! Embossed 'POOP D LOOP D POOP' branding around the rim. Symmetrical 0.25\" thick design works from either side. Injection-molded with UV-resistant pigments.",
     price: 1999,
-    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
+    images: ["/images/products/hoop-orange-v2.png", "/images/demo/hoop-with-bag.jpg", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 100,
   },
@@ -21,7 +21,7 @@ const poopDLoopProducts = [
     description:
       "The hands-free animal waste collection hoop in high-visibility fluorescent yellow. Precision specs: 8.0\" outer diameter, 5.0\" inner opening, 0.25\" thickness. Features the patented elastic band groove system (0.125\" × 0.250\") and four semi-circular notches for easy bag handling. Perfect for marking waste locations in varied terrain - visible from 50-100 feet. Embossed branding and symmetrical design.",
     price: 1999,
-    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
+    images: ["/images/products/hoop-yellow-v2.png", "/images/demo/hoop-with-bag.jpg", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 75,
   },
@@ -30,7 +30,7 @@ const poopDLoopProducts = [
     description:
       "Stand out with the bright pink POOP D LOOP! Same precision engineering: 8.0\" outer diameter, 5.0\" inner opening, elastic band groove, and four semi-circular notches. The bright pink color is uncommon in nature, making it easy to spot from across the park. Perfect for dog moms who want style and function. UV-resistant and built to last.",
     price: 1999,
-    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
+    images: ["/images/products/hoop-pink-v2.png", "/images/demo/hoop-with-bag.jpg", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 60,
   },
@@ -39,7 +39,7 @@ const poopDLoopProducts = [
     description:
       "The POOP D LOOP in vibrant bright blue. Engineered to spec: 8.0\" OD × 5.0\" ID × 0.25\" thick. Features circumferential groove (0.125\" × 0.250\") for secure elastic band retention and four notches for easy bag handling. High visibility on grass and dirt surfaces. Durable injection-molded construction with UV-resistant pigments.",
     price: 1999,
-    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
+    images: ["/images/products/hoop-blue-v2.png", "/images/demo/hoop-with-bag.jpg", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 50,
   },
@@ -48,7 +48,7 @@ const poopDLoopProducts = [
     description:
       "Classic bright red POOP D LOOP for traditional high-visibility waste collection. Full specifications: 8.0\" outer diameter, 5.0\" inner opening, 0.25\" thickness, elastic groove 0.125\" × 0.250\", four semi-circular notches. Strong contrast with green grass and natural environments. Same innovative hands-free design.",
     price: 1999,
-    images: ["/images/demo/hoop-with-bag.jpg", "/images/products/poop-d-loop-diagram.png", "/images/demo/collection-demo-1.jpg"],
+    images: ["/images/products/hoop-red-v2.png", "/images/demo/hoop-with-bag.jpg", "/images/demo/collection-demo-1.jpg"],
     category: "Hoops",
     inventory: 45,
   },
