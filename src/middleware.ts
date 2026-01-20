@@ -3,10 +3,8 @@ import { NextResponse } from "next/server";
 
 export default auth((req) => {
   const isLoggedIn = !!req.auth;
-  const isAdmin = req.auth?.user?.isAdmin;
   const isAuthPage = req.nextUrl.pathname.startsWith("/auth");
   const isAccountPage = req.nextUrl.pathname.startsWith("/account");
-  const isAdminPage = req.nextUrl.pathname.startsWith("/admin");
 
   // Redirect logged-in users away from auth pages
   if (isAuthPage && isLoggedIn) {
@@ -21,14 +19,9 @@ export default auth((req) => {
     );
   }
 
-  // Protect admin pages - redirect to home if not admin
-  if (isAdminPage && !isAdmin) {
-    return NextResponse.redirect(new URL("/", req.url));
-  }
-
   return NextResponse.next();
 });
 
 export const config = {
-  matcher: ["/account/:path*", "/auth/:path*", "/admin/:path*"],
+  matcher: ["/account/:path*", "/auth/:path*"],
 };
