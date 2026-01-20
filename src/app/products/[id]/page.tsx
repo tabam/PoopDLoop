@@ -1,10 +1,11 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ShoppingCart } from "lucide-react";
+import { ArrowLeft, ShoppingCart, Pencil } from "lucide-react";
 import { prisma } from "@/lib/prisma";
 import { formatPrice } from "@/lib/utils";
 import { AddToCartButton } from "@/components/products/AddToCartButton";
+import { auth } from "@/lib/auth";
 
 interface ProductPageProps {
   params: Promise<{ id: string }>;
@@ -53,13 +54,14 @@ export async function generateMetadata({ params }: ProductPageProps) {
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { id } = await params;
-  const product = await getProduct(id);
+  const [product, session] = await Promise.all([getProduct(id), auth()]);
 
   if (!product) {
     notFound();
   }
 
   const relatedProducts = await getRelatedProducts(product.category, product.id);
+  const isAdmin = session?.user?.isAdmin;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -114,12 +116,26 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
         {/* Product Info */}
         <div>
-          <p className="text-sm text-purple-600 font-medium uppercase tracking-wide mb-2">
-            {product.category}
-          </p>
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-            {product.name}
-          </h1>
+          <div className="flex items-start justify-between">
+            <div>
+              <p className="text-sm text-purple-600 font-medium uppercase tracking-wide mb-2">
+                {product.category}
+              </p>
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+                {product.name}
+              </h1>
+            </div>
+            {isAdmin && (
+              <Link
+                href={`/admin/products/${product.id}/edit`}
+                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-600 bg-gray-100 hover:bg-purple-100 hover:text-purple-700 rounded-lg transition-colors"
+                title="Edit product"
+              >
+                <Pencil className="w-4 h-4" />
+                Edit
+              </Link>
+            )}
+          </div>
 
           <div className="mt-4">
             <span className="text-3xl font-bold text-gray-900">
