@@ -46,6 +46,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           id: user.id,
           email: user.email,
           name: user.name,
+          isAdmin: user.isAdmin,
         };
       },
     }),
@@ -55,11 +56,15 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       if (token.sub) {
         session.user.id = token.sub;
       }
+      if (token.isAdmin !== undefined) {
+        session.user.isAdmin = token.isAdmin as boolean;
+      }
       return session;
     },
     async jwt({ token, user }) {
       if (user) {
         token.sub = user.id;
+        token.isAdmin = (user as { isAdmin?: boolean }).isAdmin;
       }
       return token;
     },
